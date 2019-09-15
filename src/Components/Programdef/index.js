@@ -9,7 +9,7 @@ import learning from './learning.jpg'
 export default class Programdef extends Component{
     render(){
         return(
-            <Container style={{backgroundColor:'grey'}} className="mb-4 ">
+            <Container style={{backgroundColor:'white'}} className="mb-4 ">
                 <h1>1. Intro</h1>
                 <h5>GOGOGRAM is the website to help you learn about programming. we start from basic so that you can be a pro programmer too in near future so get ready to become a new programmer</h5>
                 <h1 className="text-center mb-4">programming language</h1>
@@ -35,7 +35,9 @@ export default class Programdef extends Component{
                         <img src={swift} width="70px" className="mt-2"/>
                     </Col>
                 </Row>
-                <img src={learning} width="100%" className="mt-4"/>
+                <img src={learning} width="100%" className="mt-4 mb-4"/>
+
+                <h5>Do you ready to become a programmer so you can find a job or making your own application so don't go any where and read all the info in the website</h5>
             </Container>
         )
     }
