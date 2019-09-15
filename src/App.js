@@ -1,14 +1,13 @@
 import React from 'react';
 import {Button} from 'reactstrap'
 import './App.css';
+import HomePage from './Molecules/HomePage'
 
 function App() {
   return (
     <div>
       <div>
-          <Button body inverse color="danger">
-              test
-          </Button>
+          <HomePage/>
       </div>
     </div>
   );

@@ -25,9 +25,14 @@ export default class app extends Component{
                         <Nav className="ml-auto" navbar>
                             <NavItem style={{color:"white"}}>
                                 <NavLink to="">
-                                    Components
+                                    Home
                                 </NavLink>
                             </NavItem>{' '}
+                            <NavItem>
+                                <NavLink>
+                                    about
+                                </NavLink>
+                            </NavItem>
                             <NavItem>
                                 <Input 
                                 type="search" 

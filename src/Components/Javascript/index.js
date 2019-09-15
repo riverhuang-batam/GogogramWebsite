@@ -1,0 +1,59 @@
+import React, {Component} from 'react'
+import {Button, Jumbotron,Container, Row, Col} from 'reactstrap'
+import webdevelopment from './webdevelopment.jpg'
+import "react-image-gallery/styles/css/image-gallery.css"
+import ImageGallery  from 'react-image-gallery'
+import wlpp1 from './wlpp1.jpg'
+import wlpp2 from './wlpp2.png'
+import wlpp3 from './wlpp3.jpg'
+import wlpp4 from './wlpp4.jpg'
+import javascriptjumbo from './javascriptjumbo.jpg'
+export default class javascript extends Component{
+    render(){
+        const images = [
+            {
+                original:wlpp1,
+                thumbnail:wlpp1,
+            },
+            {
+                original:wlpp2,
+                thumbnail:wlpp2,
+            },
+            {
+                original:wlpp3,
+                thumbnail:wlpp3,
+            },
+            {
+                original:wlpp4,
+                thumbnail:wlpp4,
+            }
+        ]
+        let test = `what we can do by using javascript: \n
+        JavaScript is the Programming Language for the Web
+
+        JavaScript can update and change both HTML and CSS
+
+        JavaScript can calculate, manipulate and validate data
+
+        but before learning javascript you must learning HTML and CSS for the UI(User Interface)
+        by learning it all you can even make you own website`
+        return(
+            <div>
+                <Jumbotron fluid style={{backgroundImage:`url('${javascriptjumbo}')`, backgroundSize:'cover', padding:'20%'}}>
+                    <h1 style={{color:'white'}}>Javascript</h1>
+                </Jumbotron>
+                
+                <Container className="text-center mt-4">
+                    <h1>Intro what is Javascript</h1>
+                <h5>
+                {test}
+                </h5>
+                <h1>Example website UI</h1>
+                <div className="mt-4">
+                <ImageGallery items={images} />
+                </div>
+                </Container>    
+            </div>
+        )
+    }
+}

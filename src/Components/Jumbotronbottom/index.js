@@ -4,8 +4,8 @@ import {Jumbotron, Container, Row, Col} from 'reactstrap';
 export default class Jumbotronbottom extends Component{
     render(){
         return(
-            <div>
-                <Jumbotron style={{backgroundColor:"black"}} className="mt-4">
+            <footer>
+                <section style={{backgroundColor:"#212529", padding:'60px 20px'}} >
                     <Container>
                     <Row>
                         <Col xs="6">
@@ -17,8 +17,8 @@ export default class Jumbotronbottom extends Component{
                         </Col>
                     </Row>
                     </Container>
-                </Jumbotron>
-            </div>
+                </section>
+            </footer>
         )
     }
 }
