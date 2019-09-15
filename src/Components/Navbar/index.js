@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar,NavbarBrand, NavbarToggler,Collapse, Nav, NavItem, NavLink} from 'reactstrap';
+import {Navbar,NavbarBrand, NavbarToggler,Collapse, Nav, NavItem, NavLink, Input} from 'reactstrap';
 export default class app extends Component{
     constructor(props){
         super(props);
@@ -24,9 +24,17 @@ export default class app extends Component{
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem style={{color:"white"}}>
-                                <NavLink href="/AppJumbotron/">
+                                <NavLink to="">
                                     Components
                                 </NavLink>
+                            </NavItem>{' '}
+                            <NavItem>
+                                <Input 
+                                type="search" 
+                                name="search"
+                                id="search"
+                                placeholder="search"
+                                /> 
                             </NavItem>
                             
                         </Nav>
