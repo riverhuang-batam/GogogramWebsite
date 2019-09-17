@@ -8,7 +8,7 @@ import hexasgonblack from './hexasgonblack.jpg'
 export default class HomePage extends Component{
     render(){
         return(
-            <div style={{backgroundImage:`url('${hexasgonblack}')`}}>
+            <div >
             <Navbar/>
             <Jumbotron/>
             <Programdef/>

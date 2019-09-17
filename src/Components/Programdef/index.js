@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
-import {Row, Col,Container} from 'reactstrap'
+import {Row, Col,Container, Card, CardImg, CardText} from 'reactstrap'
 import python from './python.png'
 import javascript from './javascript.png'
 import go from './GO.png'
 import csharp from './csharp.png'
 import swift from './swift.png'
 import learning from './learning.jpg'
+import javascriptlearn from './javascriptlearn.png'
+import pythonlearn from './pythonlearn.jpg'
 export default class Programdef extends Component{
     render(){
         return(
@@ -36,7 +38,23 @@ export default class Programdef extends Component{
                     </Col>
                 </Row>
                 <img src={learning} width="100%" className="mt-4 mb-4"/>
-
+                <Row><Col>
+                    <Card>
+                    <CardImg top width="100%" src={javascriptlearn}/>
+                        <h4 className="mt-4">
+                            let's learn javascript
+                        </h4>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card>
+                        <CardImg style={{width:"100%"}} src={pythonlearn}/>
+                        <h4 className="mt-4">
+                            let's learn python
+                        </h4>
+                    </Card>
+                </Col>
+                </Row>
                 <h5>Do you ready to become a programmer so you can find a job or making your own application so don't go any where and read all the info in the website</h5>
             </Container>
         )
