@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Row, Col,Container, Card, CardImg, CardText} from 'reactstrap'
+import {Row, Col,Container, Card, CardImg, CardText, Jumbotron} from 'reactstrap'
 import python from './python.png'
 import javascript from './javascript.png'
 import go from './GO.png'
@@ -11,6 +11,7 @@ import pythonlearn from './pythonlearn.jpg'
 export default class Programdef extends Component{
     render(){
         return(
+            <div>
             <Container style={{backgroundColor:'white'}} className="mb-4 ">
                 <h1>1. Intro</h1>
                 <h5>GOGOGRAM is the website to help you learn about programming. we start from basic so that you can be a pro programmer too in near future so get ready to become a new programmer</h5>
@@ -41,22 +42,27 @@ export default class Programdef extends Component{
                 <Row><Col>
                     <Card>
                     <CardImg top width="100%" src={javascriptlearn}/>
-                        <h4 className="mt-4">
+                        <CardText className="mt-4">
                             let's learn javascript
-                        </h4>
+                        </CardText>
                     </Card>
                 </Col>
                 <Col>
                     <Card>
                         <CardImg style={{width:"100%"}} src={pythonlearn}/>
-                        <h4 className="mt-4">
+                        <CardText className="mt-4">
                             let's learn python
-                        </h4>
+                        </CardText>
                     </Card>
                 </Col>
                 </Row>
                 <h5>Do you ready to become a programmer so you can find a job or making your own application so don't go any where and read all the info in the website</h5>
             </Container>
+            
+            <Jumbotron style={{backgroundColor:"red"}}>
+
+            </Jumbotron>
+            </div>
         )
     }
 }

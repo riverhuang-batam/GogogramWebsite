@@ -9,9 +9,8 @@ export default class AppJumbotron extends Component{
                 <Container className="text-center">
                 <h1 style={{color:"white"}}>Welcome to the GOGOGRAM</h1>
                 </Container>
-                
             </Jumbotron>
-            
+
             </div>
         )
     }
