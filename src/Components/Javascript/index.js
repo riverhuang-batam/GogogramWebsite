@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Button, Jumbotron,Container, Row, Col} from 'reactstrap'
+import {Button, Jumbotron,Container, Row, Col, Card, CardImg} from 'reactstrap'
 import webdevelopment from './webdevelopment.jpg'
 import "react-image-gallery/styles/css/image-gallery.css"
 import ImageGallery  from 'react-image-gallery'
@@ -8,6 +8,9 @@ import wlpp2 from './wlpp2.png'
 import wlpp3 from './wlpp3.jpg'
 import wlpp4 from './wlpp4.jpg'
 import javascriptjumbo from './javascriptjumbo.jpg'
+import javascriptsallary from './javascriptsallary.png'
+import javascriptframework from './javascriptframework.jpg'
+import javascriptneed from './'
 export default class javascript extends Component{
     render(){
         const images = [
@@ -52,6 +55,15 @@ export default class javascript extends Component{
                 <div className="mt-4">
                 <ImageGallery items={images} />
                 </div>
+                <div className="mt-4">
+                    this is the website template that people make by using HTML, CSS, and Javascript
+                </div>
+                <Card></Card>
+                <Card></Card>
+                <h1>Career Opportunities</h1>
+                <img src={javascriptsallary}/>
+                <h1>javascript Framework</h1>
+                <img src={javascriptframework}/>
                 </Container>    
             </div>
         )
