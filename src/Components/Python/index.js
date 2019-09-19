@@ -6,7 +6,8 @@ export default class Python extends Component{
     render(){
         return(
             <div>
-                <Jumbotron style={{background:`url('${python}')`, backgroundSize:'cover', padding:'20%'}} className="text-center">
+                <Jumbotron fluid style={{background:`url('${python}')`, backgroundSize:'cover', padding:'20%'}}>
+                <div style={{backgroundColor:'black', position:'absolute', top:'0',left:'0',bottom:'0',right:'0', opacity:'0.3'}}></div>
                     <h1 style={{color:'white'}}>Python</h1>
                 </Jumbotron>
                 <h5>so what can we do by learning python?</h5>
