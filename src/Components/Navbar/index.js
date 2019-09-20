@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Navbar,NavbarBrand, NavbarToggler,Collapse, Nav, NavItem, NavLink, Input} from 'reactstrap';
+import {Navbar,NavbarBrand, NavbarToggler,Collapse, Nav, NavItem, Input} from 'reactstrap';
+import {NavLink} from 'react-router-dom'
 import GOGOGRAM from './GOGOGRAM.png'
 export default class app extends Component{
     constructor(props){
@@ -26,7 +27,7 @@ export default class app extends Component{
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
+                        <Nav classNapyyme="ml-auto" navbar>
                             <NavItem style={{color:"white"}}>
                                 <NavLink to="">
                                     Home

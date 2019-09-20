@@ -51,6 +51,11 @@ export default class javascript extends Component{
                 <h5>
                 {test}
                 </h5>
+                <h5>JavaScript allows you to build interactive websites. JavaScript has become an essential web technology along with HTML and CSS, as most browsers implement JavaScript. Thus, You must learn JavaScript if you want to get into web development, 
+                    and you must learn it well if you're planning on being a front-end developer or on using JavaScript for backend development.
+                    Furthermore, JavaScript usage has now extended to mobile app development, desktop app development, and game development. 
+                    All in all, it has exploded in popularity and is now a very useful skill to learn.
+                </h5>
                 <h1>Example website UI</h1>
                 <div className="mt-4">
                 <ImageGallery items={images} />
