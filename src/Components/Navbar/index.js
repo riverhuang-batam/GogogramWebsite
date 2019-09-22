@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar,NavbarBrand, NavbarToggler,Collapse, Nav, NavItem, Input} from 'reactstrap';
+import {Navbar,NavbarBrand, NavbarToggler,Collapse, Nav, NavItem, Input, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, Button} from 'reactstrap';
 import {NavLink, Route, Switch, HashRouter} from 'react-router-dom'
 import GOGOGRAM from './GOGOGRAM.png'
 import About from './../About'
@@ -33,22 +33,38 @@ export default class app extends Component{
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav classNapyyme="ml-auto" navbar>
-                            <NavItem style={{color:"white"}}>
-                                <NavLink to="/">
-                                    Home
-                                </NavLink>
-                            </NavItem>{' '}
+                        <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink to="About">
+                                <NavLink to="/" activeClassName="active">
+                                    <h5 style={{color:"white"}} className="mt-1 text-center">
+                                        Home
+                                    </h5>
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink to="About" activeClassName="active" activeStyle={{ color: 'red' }}>
+                                <h5 style={{color:"white"}} className="mt-1 text-center">
                                     about
+                                    </h5>
                                 </NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink>
-                                    Info
-                                </NavLink>
-                            </NavItem>
+                            <UncontrolledDropdown nav inNavBar>
+                                <DropdownToggle color="dark" activeClassName="active" activeStyle={{ color: 'red' }}>
+                                    Course
+                                </DropdownToggle>
+                                <DropdownMenu left>
+                                    <DropdownItem>
+                                        <NavLink to="/Javascript">
+                                        Javascript
+                                        </NavLink>
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                    <NavLink to="/Python">
+                                        Python
+                                        </NavLink>
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
                             <NavItem>
                                 <Input 
                                 type="search" 

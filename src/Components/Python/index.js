@@ -8,7 +8,7 @@ export default class Python extends Component{
     render(){
         return(
             <div>
-                <Jumbotron fluid style={{background:`url('${python}')`, backgroundSize:'cover', padding:'20%'}}>
+                <Jumbotron fluid style={{background:`url('${python}')`, backgroundSize:'cover', padding:'20%', position:'relative'}}>
                 <div style={{backgroundColor:'black', position:'absolute', top:'0',left:'0',bottom:'0',right:'0', opacity:'0.3'}}></div>
                     <h1 style={{color:'white'}}>Python</h1>
                 </Jumbotron>
