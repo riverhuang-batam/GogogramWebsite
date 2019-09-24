@@ -5,12 +5,13 @@ import linked from './linked.png'
 import github from './github.png'
 import whatsapp from './whatsapp.png'
 import gmail from './gmail.png'
+import webdesigndevelop from './webdesigndevelop.png'
 
 export default class About extends Component{
     render(){
         return(
             <div>
-                <Jumbotron fluid style={{backgroundImage:`url('${webdev}')`, backgroundSize:'cover', padding:'18%'}}>
+                <Jumbotron fluid style={{backgroundImage:`url('${webdesigndevelop}')`, backgroundSize:'cover', padding:'17%'}}>
 
                 </Jumbotron>
                 <Container>

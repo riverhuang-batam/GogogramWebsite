@@ -7,7 +7,7 @@ import wlpp1 from './wlpp1.jpg'
 import wlpp2 from './wlpp2.png'
 import wlpp3 from './wlpp3.jpg'
 import wlpp4 from './wlpp4.jpg'
-import javascriptjumbo from './javascriptjumbo.jpg'
+import Mern from './Mern.jpg'
 import javascriptsallary from './javascriptsallary.png'
 import javascriptframework from './javascriptframework.jpg'
 import javascriptneed from './'
@@ -42,7 +42,7 @@ export default class javascript extends Component{
         by learning it all you can even make you own website`
         return(
             <div>
-                <Jumbotron fluid style={{backgroundImage:`url('${javascriptjumbo}')`, backgroundSize:'cover', padding:'20%'}}>
+                <Jumbotron fluid style={{backgroundImage:`url('${Mern}')`, backgroundSize:'cover', padding:'9%'}}>
                     <h1 style={{color:'white'}}>Javascript</h1>
                 </Jumbotron>
                 
@@ -65,10 +65,11 @@ export default class javascript extends Component{
                 </div>
                 <Card></Card>
                 <Card></Card>
-                <h1>Career Opportunities</h1>
-                <img src={javascriptsallary}/>
                 <h1>javascript Framework</h1>
                 <img src={javascriptframework}/>
+                
+                <h1>Career Opportunities</h1>
+                <img src={javascriptsallary}/>
                 </Container>    
             </div>
         )

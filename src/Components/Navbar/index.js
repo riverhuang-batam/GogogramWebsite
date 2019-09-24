@@ -75,7 +75,7 @@ export default class app extends Component {
                                         activeStyle={{
                                         color: 'red'
                                     }}
-                                    style={{paddingRight:'4px'}}
+                                    style={{paddingRight:'3px'}}
                                         className="text-center"
                                         nav
                                         caret>
@@ -112,7 +112,9 @@ export default class app extends Component {
                         <Route exact path="/Javascript" component={Javascript}/>
                     </Switch>
                 </div>
+                <div className="text-center">
                 copyright © Term|RIVERWebsite made by River. All Rights Reserved.
+                </div>
             </HashRouter>
         )
     }

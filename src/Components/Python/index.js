@@ -1,15 +1,16 @@
 import React, {Component} from 'react'
 import {Jumbotron, Container, Row, Col} from 'reactstrap'
-import python from './Python.jpg'
+import python from './Pythonweb.png'
 import pythonsalary from './pythonsalary.png'
 import pythonframework from './pythonframework.jpg'
+import pythonneed from './pythonneed.png'
 
 export default class Python extends Component{
     render(){
         return(
             <div>
-                <Jumbotron fluid style={{background:`url('${python}')`, backgroundSize:'cover', padding:'20%', position:'relative'}}>
-                <div style={{backgroundColor:'black', position:'absolute', top:'0',left:'0',bottom:'0',right:'0', opacity:'0.3'}}></div>
+                <Jumbotron fluid style={{background:`url('${python}')`, backgroundSize:'cover', padding:'12%', position:'relative'}}>
+                
                     <h1 style={{color:'white'}}>Python</h1>
                 </Jumbotron>
                 
@@ -45,6 +46,13 @@ export default class Python extends Component{
                 <img src={pythonsalary} width="100%"/>
                 </Col>
                 </Row>
+                <div className="mt-4">
+                    <h2> Needed Developer</h2>
+                    <h5>
+                        So every year company need developer but how many company need a python developer. If you want to find a job and haven't get a job i recomend you need to know what company need what kind of python developer. in this picture let you know what kind python developer need for company so you want to learn it and hopufully get a job.
+                    </h5>
+                </div>
+                <img src={pythonneed} width="50%"/>
                 </Container>
             </div>
         )
