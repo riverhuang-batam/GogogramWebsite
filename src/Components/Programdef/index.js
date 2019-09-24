@@ -13,9 +13,9 @@ export default class Programdef extends Component{
         return(
             <div>
             <Container style={{backgroundColor:'white'}} className="mb-4 ">
-                <h1>1. Intro</h1>
+                <h2>1. Intro</h2>
                 <h5>GOGOGRAM is the website to help you learn about programming. we start from basic so that you can be a pro programmer too in near future so get ready to become a new programmer</h5>
-                <h1 className="text-center mb-4">programming language</h1>
+                <h2 className="text-center mb-4">programming language</h2>
                 <Row>
                     <Col className="text-center">
                         <h2>Javascript</h2>
@@ -39,19 +39,23 @@ export default class Programdef extends Component{
                     </Col>
                 </Row>
                 <img src={learning} width="100%" className="mt-4 mb-4"/>
-                <Row><Col>
+                <Row><Col md="6">
                     <Card>
-                    <CardImg top width="100%" src={javascriptlearn}/>
+                    <CardImg top width="10px" height="280px" src={javascriptlearn}/>
                         <CardText className="mt-4">
+                            <h5>
                             let's learn javascript
+                            </h5>
                         </CardText>
                     </Card>
                 </Col>
-                <Col>
+                <Col md="6">
                     <Card>
-                        <CardImg style={{width:"100%"}} src={pythonlearn}/>
+                        <CardImg top width="10px" height="280px" src={pythonlearn}/>
                         <CardText className="mt-4">
+                            <h5>
                             let's learn python
+                            </h5>
                         </CardText>
                     </Card>
                 </Col>
