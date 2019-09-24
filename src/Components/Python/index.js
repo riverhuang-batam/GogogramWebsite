@@ -9,11 +9,8 @@ export default class Python extends Component{
     render(){
         return(
             <div>
-                <Jumbotron fluid style={{background:`url('${python}')`, backgroundSize:'cover', padding:'12%', position:'relative'}}>
-                
-                    <h1 style={{color:'white'}}>Python</h1>
+                <Jumbotron fluid style={{background:`url('${python}')`, backgroundSize:'cover', padding:'16%', position:'relative'}}>
                 </Jumbotron>
-                
                 <Container>
                 <h5>so what can we do by learning python?</h5>
                 <h5>we can learn about machine learning for making AI(Artificial Inteligence)</h5>
@@ -52,7 +49,9 @@ export default class Python extends Component{
                         So every year company need developer but how many company need a python developer. If you want to find a job and haven't get a job i recomend you need to know what company need what kind of python developer. in this picture let you know what kind python developer need for company so you want to learn it and hopufully get a job.
                     </h5>
                 </div>
-                <img src={pythonneed} width="50%"/>
+                <div className="text-center">
+                <img src={pythonneed} width="50%" />
+                </div>
                 </Container>
             </div>
         )

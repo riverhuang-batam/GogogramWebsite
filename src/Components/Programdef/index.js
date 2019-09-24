@@ -59,9 +59,6 @@ export default class Programdef extends Component{
                 <h5>Do you ready to become a programmer so you can find a job or making your own application so don't go any where and read all the info in the website</h5>
             </Container>
             
-            <Jumbotron style={{backgroundColor:"red"}}>
-
-            </Jumbotron>
             </div>
         )
     }

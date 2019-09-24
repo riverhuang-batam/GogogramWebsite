@@ -112,7 +112,7 @@ export default class app extends Component {
                         <Route exact path="/Javascript" component={Javascript}/>
                     </Switch>
                 </div>
-                <div className="text-center">
+                <div className="text-center mt-4 mb-4">
                 copyright © Term|RIVERWebsite made by River. All Rights Reserved.
                 </div>
             </HashRouter>

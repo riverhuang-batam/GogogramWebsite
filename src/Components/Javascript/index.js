@@ -18,7 +18,7 @@ import wlpp4 from './wlpp4.jpg'
 import Mern from './Mern.jpg'
 import javascriptsallary from './javascriptsallary.png'
 import javascriptframework from './javascriptframework.jpg'
-import javascriptneed from './'
+import javascriptneed from './javascriptneed.jpg'
 export default class javascript extends Component {
     render() {
         const images = [
@@ -47,16 +47,13 @@ export default class javascript extends Component {
         by learning it all you can even make you own website`
         return (
             <div>
-                <Jumbotron
-                    fluid
+                <Jumbotron fluid
                     style={{
                     backgroundImage: `url('${Mern}')`,
                     backgroundSize: 'cover',
-                    padding: '10%'
+                    padding: '12%',
+                    position: 'relative'
                 }}>
-                    <h1 style={{
-                        color: 'white'
-                    }}>Javascript</h1>
                 </Jumbotron>
 
                 <Container className="text-center mt-4">
@@ -88,6 +85,9 @@ export default class javascript extends Component {
                     <h1>Career Opportunities</h1>
 
                     <img src={javascriptsallary} width="100%"/>
+
+                    <h1>Javascript Need</h1>
+                    <img src={javascriptneed} width="50%" className="text-center"/>
                 </Container>
             </div>
         )
