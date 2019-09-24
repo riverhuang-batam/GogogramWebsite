@@ -41,7 +41,7 @@ export default class Programdef extends Component{
                 <img src={learning} width="100%" className="mt-4 mb-4"/>
                 <Row><Col md="6">
                     <Card>
-                    <CardImg top width="10px" height="280px" src={javascriptlearn}/>
+                    <CardImg top width="100%" src={javascriptlearn}/>
                         <CardText className="mt-4">
                             <h5>
                             let's learn javascript
@@ -51,7 +51,7 @@ export default class Programdef extends Component{
                 </Col>
                 <Col md="6">
                     <Card>
-                        <CardImg top width="10px" height="280px" src={pythonlearn}/>
+                        <CardImg top width="100%" src={pythonlearn}/>
                         <CardText className="mt-4">
                             <h5>
                             let's learn python
