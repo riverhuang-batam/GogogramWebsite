@@ -48,6 +48,7 @@ export default class app extends Component {
                 <div>
                     <Navbar color="dark" dark expand="md">
                         <NavbarBrand
+                            className="mt-1"
                             style={{
                             color: "white"
                         }}>
@@ -61,9 +62,12 @@ export default class app extends Component {
                                     to="/"
                                     style={{
                                     color: 'white',
+                                    display: 'block',
+                                    padding: '18px',
+                                    fontWeight:'bold'
                                 }}>
                                     <NavItem className="text-center">
-
+                                    
                                         Home
 
                                     </NavItem>
@@ -72,6 +76,9 @@ export default class app extends Component {
                                     to="About"
                                     style={{
                                     color: 'white',
+                                    display: 'block',
+                                    padding: '18px',
+                                    fontWeight:'bold'
                                 }}>
                                     <NavItem className="text-center">
                                         About
@@ -84,7 +91,10 @@ export default class app extends Component {
                                         inverse
                                         color="dark"
                                         style={{
-                                        color: 'white'
+                                        color: 'white',
+                                        display: 'block',
+                                        padding: '18px',
+                                        fontWeight:'bold'
                                     }}
                                         className="text-center"
                                         nav
@@ -93,21 +103,18 @@ export default class app extends Component {
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <NavLink to="/Javascript">
-                                            <DropdownItem>
+                                            <DropdownItem style={{fontWeight:'bold'}}>
                                                 Javascript
                                             </DropdownItem>
                                         </NavLink>
                                         <NavLink to="/Python">
-                                            <DropdownItem>
+                                            <DropdownItem style={{fontWeight:'bold'}}>
                                                 Python
                                             </DropdownItem>
                                         </NavLink>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
 
-                                <NavItem className="mt-1">
-                                    <Input type="search" name="search" id="search" placeholder="search"/>
-                                </NavItem>
 
                             </Nav>
 
