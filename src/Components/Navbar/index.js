@@ -86,7 +86,7 @@ export default class app extends Component {
                                         caret>
                                         Course
                                     </DropdownToggle>
-                                    <DropdownMenu left>
+                                    <DropdownMenu right>
                                         <DropdownItem>
                                             <NavLink to="/Javascript">
                                                 Javascript

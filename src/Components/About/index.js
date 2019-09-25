@@ -11,12 +11,11 @@ export default class About extends Component{
         return(
             <div>
                 <Jumbotron fluid style={{backgroundImage:`url('${webdesigndevelop}')`, backgroundSize:'cover', padding:'17%'}}>
-
                 </Jumbotron>
                 <Container>
-                    
+                <h2 className="text-center">About</h2>
                 <h5>the reason i create this website is because there are many people don't know how to make program or application or become a programmer. By learning in this website you ready to start to become a programmer</h5>
-                <h2>Question</h2>
+                <h2 className="text-center">Question</h2>
                 <h5>if you want to know new info about programming language that you want to learn just send message to me then i will add it in this website as soon as possible </h5>
                 <Form action= "https://formspree.io/riverhuang011@gmail.com" method="POST">
                     <FormGroup>
