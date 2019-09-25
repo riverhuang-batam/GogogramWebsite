@@ -11,7 +11,8 @@ import {
     DropdownMenu,
     DropdownItem,
     UncontrolledDropdown,
-    Container
+    Container,
+    Button
 } from 'reactstrap';
 import linked from './linked.png'
 import github from './github.png'
@@ -46,7 +47,7 @@ export default class app extends Component {
             <HashRouter>
                 <div>
                     <Navbar color="dark" dark expand="md">
-                        <NavbarBrand 
+                        <NavbarBrand
                             style={{
                             color: "white"
                         }}>
@@ -56,55 +57,58 @@ export default class app extends Component {
                         <NavbarToggler onClick={this.toggle}/>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
+                                <NavLink
+                                    to="/"
+                                    style={{
+                                    color: 'white',
+                                }}>
+                                    <NavItem className="text-center">
 
-                                <NavItem className="mt-1 text-center" style={{paddingRight:'10px', paddingTop:'4px'}}>
-                                    <NavLink to="/" activeClassName="active" >
                                         Home
-                                    </NavLink>{' '}
-                                </NavItem>
-                                <NavItem className="mt-1 text-center" style={{paddingRight:'10px', paddingTop:'4px'}}>
-                                    <NavLink
-                                        to="About"
-                                        activeClassName="active"
-                                        activeStyle={{
-                                        color: 'red'
-                                    }}>
+
+                                    </NavItem>
+                                </NavLink>
+                                <NavLink
+                                    to="About"
+                                    style={{
+                                    color: 'white',
+                                }}>
+                                    <NavItem className="text-center">
                                         About
-                                    </NavLink>
-                                </NavItem>
-                                
+                                    </NavItem>
+                                </NavLink>
+
                                 <UncontrolledDropdown nav inNavBar>
                                     <DropdownToggle
+                                        body
+                                        inverse
                                         color="dark"
-                                        activeClassName="active"
-                                        activeStyle={{
-                                        color: 'red'
+                                        style={{
+                                        color: 'white'
                                     }}
-                                    style={{paddingRight:'3px'}}
                                         className="text-center"
                                         nav
                                         caret>
                                         Course
                                     </DropdownToggle>
                                     <DropdownMenu right>
-                                        <DropdownItem>
-                                            <NavLink to="/Javascript">
+                                        <NavLink to="/Javascript">
+                                            <DropdownItem>
                                                 Javascript
-                                            </NavLink>
-                                        </DropdownItem>
-                                        <DropdownItem>
-                                            <NavLink to="/Python">
+                                            </DropdownItem>
+                                        </NavLink>
+                                        <NavLink to="/Python">
+                                            <DropdownItem>
                                                 Python
-                                            </NavLink>
-                                        </DropdownItem>
-                                    </DropdownMenu> 
+                                            </DropdownItem>
+                                        </NavLink>
+                                    </DropdownMenu>
                                 </UncontrolledDropdown>
 
                                 <NavItem className="mt-1">
                                     <Input type="search" name="search" id="search" placeholder="search"/>
                                 </NavItem>
-                                
-                                
+
                             </Nav>
 
                         </Collapse>
@@ -118,23 +122,23 @@ export default class app extends Component {
                     </Switch>
                 </div>
                 <Container>
-                <div className="text-center mt-4">
-                <a href="https://www.linkedin.com/in/river-huang-43a979192/">
-                <img src={linked} width="28px"/>{' '}
-                </a>
-                <a href="https://github.com/riverhuang-batam/">
-                <img src={github} width="30px"/>{' '}
-                </a>
-                <a href="https://www.facebook.com/river.huang.1042">
-                <img src={facebook} width="30px"/>{' '}
-                </a>
-                <a href='https://www.instagram.com/huang.river/'>
-                <img src={instagram}  width="30px"/>
-                </a>
-                </div>
-                <div className="text-center mt-4 mb-4">
-                copyright © Term|RIVERWebsite made by River. All Rights Reserved.
-                </div>
+                    <div className="text-center mt-4">
+                        <a href="https://www.linkedin.com/in/river-huang-43a979192/">
+                            <img src={linked} width="28px"/>{' '}
+                        </a>
+                        <a href="https://github.com/riverhuang-batam/">
+                            <img src={github} width="30px"/>{' '}
+                        </a>
+                        <a href="https://www.facebook.com/river.huang.1042">
+                            <img src={facebook} width="30px"/>{' '}
+                        </a>
+                        <a href='https://www.instagram.com/huang.river/'>
+                            <img src={instagram} width="30px"/>
+                        </a>
+                    </div>
+                    <div className="text-center mt-4 mb-4">
+                        copyright © Term|RIVERWebsite made by River. All Rights Reserved.
+                    </div>
                 </Container>
             </HashRouter>
         )

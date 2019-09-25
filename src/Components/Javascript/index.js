@@ -71,17 +71,28 @@ export default class javascript extends Component {
                         is now a very useful skill to learn.
                     </h5>
                     <h1>Example website UI</h1>
-                        <h5>this is the website template that people make by using HTML, CSS, and Javascript</h5>
-                    
+                    <h5>this is the website template that people make by using HTML, CSS, and Javascript</h5>
+
                     <div className="mt-4">
                         <ImageGallery items={images}/>
                     </div>
                     <h1>javascript Framework</h1>
                     <img src={javascriptframework} width="100%"/>
 
-                    <h5>On the picture is the python framework you can learn and use for you're
-                        project even in work sometime you will use one of those framework for you're
-                        project. So is a good thing to learn a framework</h5>
+                    <h5 className="mt-2">On the picture is the javascript framework you can learn and use but the
+                        main reason what is javascript and why use it? A software framework is an
+                        abstraction in which software providing generic functionality can be selectively
+                        changed by additional user-written code. JavaScript framework is an application
+                        framework written in JavaScript where the programmers can manipulate the
+                        functions and use them for their convenience. Frameworks are more adaptable for
+                        the designing of websites and hence, they are preferred by most of the website
+                        developers. JavaScript frameworks are a type of tool that makes working with
+                        JavaScript easier and smoother. These frameworks also make it possible for the
+                        programmer to code the application as a device responsive. This responsiveness
+                        is yet another reason why the JavaScript frameworks are quite popular when it
+                        comes to the question of using a high-level machine language. Let’s have a look
+                        at the best JS Frameworks in 2019.
+                    </h5>
                     <h1>Javascript Salary</h1>
 
                     <img src={javascriptsallary} width="100%"/>
@@ -94,15 +105,24 @@ export default class javascript extends Component {
                     <Row>
                         <Col sm="6">
 
-                            <h2>
-                                Needed Developer
-                            </h2>
+                            <h1>
+                                Javascript Needed Developer
+                            </h1>
                             <h5>
-                                So every year company need developer but how many company need a python
-                                developer. If you want to find a job and haven't get a job i recomend you need
-                                to know what company need what kind of python developer. in this picture let you
-                                know what kind python developer need for company so you want to learn it and
-                                hopefully get a job.
+                                So every year company need developer but how many company need a javascript
+                                developer. If you want to find a job and haven't get a job i recommend you need
+                                to know what company need what kind of javascript developer. in this picture let
+                                you know what kind javascript developer need for company 2019. so you want to
+                                learn it and hopefully get a job or build own application. You can see in the
+                                picture that in April 2019 that so many company need a react developer so is
+                                very good thing you learn react JS for web development or react native mobile
+                                development or you can learn Angular Framework is the second highest needed
+                                developer for company that still want angular . And by knowing what kind
+                                company needed developer is very good thing to find out how many developer they
+                                need so you can apply the job without worry that there is no job for javascript
+                                developer, you can even think that there is no waste of time on learning
+                                javascript. so learn javascript now little by little you can be a pro programmer
+                                and find best suited job for you
                             </h5>
 
                         </Col>
