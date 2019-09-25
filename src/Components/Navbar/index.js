@@ -10,8 +10,13 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    UncontrolledDropdown
+    UncontrolledDropdown,
+    Container
 } from 'reactstrap';
+import linked from './linked.png'
+import github from './github.png'
+import facebook from './facebook.png'
+import instagram from './instagram.png'
 import {Route, Switch, HashRouter, NavLink} from 'react-router-dom'
 import GOGOGRAM from './GOGOGRAM.png'
 import About from './../About'
@@ -112,9 +117,25 @@ export default class app extends Component {
                         <Route exact path="/Javascript" component={Javascript}/>
                     </Switch>
                 </div>
+                <Container>
+                <div className="text-center mt-4">
+                <a href="https://www.linkedin.com/in/river-huang-43a979192/">
+                <img src={linked} width="28px"/>{' '}
+                </a>
+                <a href="https://github.com/riverhuang-batam/">
+                <img src={github} width="30px"/>{' '}
+                </a>
+                <a href="https://www.facebook.com/river.huang.1042">
+                <img src={facebook} width="30px"/>{' '}
+                </a>
+                <a href='https://www.instagram.com/huang.river/'>
+                <img src={instagram}  width="30px"/>
+                </a>
+                </div>
                 <div className="text-center mt-4 mb-4">
                 copyright © Term|RIVERWebsite made by River. All Rights Reserved.
                 </div>
+                </Container>
             </HashRouter>
         )
     }

@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
 import {Container, Jumbotron, Form, FormGroup, Label, Input, Button} from 'reactstrap'
 import webdev from './webdevelopment1.jpg'
-import linked from './linked.png'
-import github from './github.png'
 import whatsapp from './whatsapp.png'
 import gmail from './gmail.png'
+
 import webdesigndevelop from './webdesigndevelop.png'
 
 export default class About extends Component{
@@ -43,12 +42,6 @@ export default class About extends Component{
                     </FormGroup>
                     <Button color="success">Submit</Button>
                 </Form>
-                <div className="text-center mt-4">
-                <img src={linked} width="40px"/>{' '}
-                <img src={github} width="40px"/>{' '}
-                <img src={gmail} width="42px"/>{' '}
-                <img src={whatsapp} width="40px"/>
-                </div>
                 </Container>
             </div>
         )
