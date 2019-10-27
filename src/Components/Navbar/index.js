@@ -144,7 +144,7 @@ export default class app extends Component {
                         </a>
                     </div>
                     <div className="text-center mt-4 mb-4">
-                        copyright © Term|RIVERWebsite made by River. All Rights Reserved.
+                        copyright © Term|Gogogram made by River. All Rights Reserved.
                     </div>
                 </Container>
             </HashRouter>
